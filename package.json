@@ -1,0 +1,30 @@
+{
+  "name": "writing-streak-tracker",
+  "displayName": "Writing Streak Tracker",
+  "description": "Tracks how many words you write today across any .txt file, with streaks, a daily goal, a calendar heatmap, and an animated mascot.",
+  "version": "1.2.0",
+  "publisher": "saimss",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": ["Other"],
+  "keywords": ["writing", "word count", "streak", "productivity", "goal tracker"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "writingStreak.openPanel",
+        "title": "Writing Streak: Open Panel"
+      },
+      {
+        "command": "writingStreak.setGoal",
+        "title": "Writing Streak: Set Daily Goal"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "node --check extension.js"
+  }
+}
